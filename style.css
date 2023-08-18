@@ -1,0 +1,149 @@
+/* Reset default margin and padding for the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Header section styles */
+.header-section{
+    display:flex;
+    background-color: #125784;
+    color: #fff;
+    align-items: flex-start;
+    padding: 1%;
+}
+
+/* Logo in the header */
+.logo-header img{
+    width: 20%;
+}
+
+/* Navigation menu styles */
+.navigation-menu ul{
+    display:flex;
+    gap: 10%;
+}
+.navigation-menu li a{
+    color:#ffffff;
+    font-family: "Montserrat";
+}   
+
+/* Search bar in the header */
+.search-header{
+    padding-left: 33%;
+    padding-top: 1%;
+}
+.search-header input{
+    font-weight:bolder;
+}
+.search-header input{
+    color:#0e0e0e;
+}
+
+/* Styling for the footer */
+footer {
+    background-color: #0e0e0e;
+    color: #fff;
+    width: 100%;
+    padding: 1%; /* Adding some padding to the footer */
+    bottom: 0;
+    position: relative;
+}
+
+/* Styling for the first section */
+.first-section {
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../resources/img1.jpg");
+    height: 70vh;
+    width: 100%;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Styling for the text in the first container */
+.first-container h1{
+    color:#ffffff;
+    padding-top: 18%;
+    font-size: 60px;
+    font-family: "Montserrat";
+}
+
+/* Styling for the second section */
+.second-section {
+    display: flex;
+    flex-grow: 1; /* Allow the second section to take up remaining space */
+}
+.image-container img{
+    height: 100%;
+    width: 100%;
+}
+.second-container{
+    background-color:  #f57f17;
+
+}
+.second-container p{
+    color:#ffffff;
+    font-size: 25px;
+    padding-left: 2%;
+    font-family: "Montserrat";
+}
+.second-container p + p{
+    font-size:20px;
+    font-family:"Roboto";   
+}
+
+/* Styling for the three images section */
+.three-images{
+    display:flex;
+    flex-direction:row-reverse;
+    align-items: center;
+}
+.image-three img,
+.image-four img,
+.image-five img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for the form section */
+.form-section{
+    background-color:  #5e35b1;
+    color: white; 
+    text-align: center;
+    padding-bottom: 20px; 
+    font-family: roboto;
+}
+.ip{
+    width: 40%;
+    height: 30px;
+    margin-top: 28px;
+}
+#input1{
+    height: 50px;
+}
+
+/* Styling for the footer content */
+.footer-content{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: "log tx";
+    background: black;
+    color: white;
+    padding-bottom: 30px;
+}
+.footer-content > div:nth-child(1) >img{
+    width: 35%  ;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.footer-content > div:nth-child(2) > h1{
+    font-size: 35px;
+    font-family: "Roboto";
+}
+.footer-content > div:nth-child(2) > p{
+    font-size: 20px;
+    font-family: "Roboto";
+}
